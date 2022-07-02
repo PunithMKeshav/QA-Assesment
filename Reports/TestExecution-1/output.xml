@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.9.6 on win32)" generated="20220702 15:43:35.602" rpa="false" schemaversion="2">
+<suite id="s1" name="UITestAuto" source="C:\Users\225027\PycharmProjects\QAAutomationAssesment\TestCases\UITestAuto.robot">
+<test id="s1-t1" name="UI Test Automation">
+<kw name="TC1: Verify you can navigate to Payees page using the navigation menu" library="UserKeywords">
+<tag>UI Test Automation</tag>
+<doc>This test case verifies Payees page using the navigation menu,
+1. Click ‘Menu’
+2. Click ‘Payees’
+3. Verify Payees page is loaded</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220702 15:43:35.890" level="INFO">Opening browser 'chrome' to base url 'https://www.demo.bnz.co.nz/client/'.</msg>
+<status status="PASS" starttime="20220702 15:43:35.890" endtime="20220702 15:43:42.853"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220702 15:43:42.853" endtime="20220702 15:43:42.983"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30sec</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220702 15:43:42.983" endtime="20220702 15:43:42.986"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[contains(text(),'Menu')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:43:42.987" level="INFO">Clicking element 'xpath://span[contains(text(),'Menu')]'.</msg>
+<status status="PASS" starttime="20220702 15:43:42.986" endtime="20220702 15:43:46.432"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='Payees']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:43:46.433" level="INFO">Clicking element 'xpath://span[normalize-space()='Payees']'.</msg>
+<status status="PASS" starttime="20220702 15:43:46.433" endtime="20220702 15:43:46.736"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='Payees']</arg>
+<arg>Payees</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220702 15:43:46.738" level="INFO">Verifying element 'xpath://span[normalize-space()='Payees']' contains exact text 'Payees'.</msg>
+<status status="PASS" starttime="20220702 15:43:46.736" endtime="20220702 15:43:48.451"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220702 15:43:48.645" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220702 15:43:48.451" endtime="20220702 15:43:48.645"/>
+</kw>
+<status status="PASS" starttime="20220702 15:43:35.890" endtime="20220702 15:43:48.645"/>
+</kw>
+<kw name="TC2: Verify you can add new payee in the Payees page" library="UserKeywords">
+<tag>UI Test Automation</tag>
+<doc>This test case verifies Payees Addition ,
+1. Navigate to Payees page
+2. Click ‘Add’ button
+3. Enter the payee details (name, account number)
+4. Click ‘Add’ button
+5. ‘Payee added’ message is displayed, and payee is added in the list of payees</doc>
+<kw name="TC1: Verify you can navigate to Payees page using the navigation menu" library="UserKeywords">
+<tag>UI Test Automation</tag>
+<doc>This test case verifies Payees page using the navigation menu,
+1. Click ‘Menu’
+2. Click ‘Payees’
+3. Verify Payees page is loaded</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220702 15:43:48.646" level="INFO">Opening browser 'chrome' to base url 'https://www.demo.bnz.co.nz/client/'.</msg>
+<status status="PASS" starttime="20220702 15:43:48.646" endtime="20220702 15:43:52.030"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220702 15:43:52.030" endtime="20220702 15:43:52.165"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30sec</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220702 15:43:52.165" endtime="20220702 15:43:52.168"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[contains(text(),'Menu')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:43:52.168" level="INFO">Clicking element 'xpath://span[contains(text(),'Menu')]'.</msg>
+<status status="PASS" starttime="20220702 15:43:52.168" endtime="20220702 15:43:55.315"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='Payees']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:43:55.317" level="INFO">Clicking element 'xpath://span[normalize-space()='Payees']'.</msg>
+<status status="PASS" starttime="20220702 15:43:55.315" endtime="20220702 15:43:55.913"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='Payees']</arg>
+<arg>Payees</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220702 15:43:55.914" level="INFO">Verifying element 'xpath://span[normalize-space()='Payees']' contains exact text 'Payees'.</msg>
+<status status="PASS" starttime="20220702 15:43:55.914" endtime="20220702 15:43:56.182"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220702 15:43:56.391" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220702 15:43:56.182" endtime="20220702 15:43:56.391"/>
+</kw>
+<status status="PASS" starttime="20220702 15:43:48.646" endtime="20220702 15:43:56.391"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30sec</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220702 15:43:56.391" endtime="20220702 15:43:56.393"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='Add']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:43:56.393" level="INFO">Clicking element 'xpath://span[normalize-space()='Add']'.</msg>
+<status status="PASS" starttime="20220702 15:43:56.393" endtime="20220702 15:43:56.450"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='ComboboxInput-apm-name']</arg>
+<arg>Keshav</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220702 15:43:56.450" level="INFO">Typing text 'Keshav' into text field 'xpath://input[@id='ComboboxInput-apm-name']'.</msg>
+<status status="PASS" starttime="20220702 15:43:56.450" endtime="20220702 15:43:56.849"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[@title='Someone new: Keshav']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:43:56.849" level="INFO">Clicking element 'xpath://span[@title='Someone new: Keshav']'.</msg>
+<status status="PASS" starttime="20220702 15:43:56.849" endtime="20220702 15:43:56.922"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='apm-bank']</arg>
+<arg>03</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220702 15:43:56.922" level="INFO">Typing text '03' into text field 'xpath://input[@id='apm-bank']'.</msg>
+<status status="PASS" starttime="20220702 15:43:56.922" endtime="20220702 15:43:57.004"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='apm-branch']</arg>
+<arg>0187</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220702 15:43:57.005" level="INFO">Typing text '0187' into text field 'xpath://input[@id='apm-branch']'.</msg>
+<status status="PASS" starttime="20220702 15:43:57.004" endtime="20220702 15:43:57.063"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='apm-account']</arg>
+<arg>0026306</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220702 15:43:57.063" level="INFO">Typing text '0026306' into text field 'xpath://input[@id='apm-account']'.</msg>
+<status status="PASS" starttime="20220702 15:43:57.063" endtime="20220702 15:43:57.122"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='apm-suffix']</arg>
+<arg>003</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220702 15:43:57.122" level="INFO">Typing text '003' into text field 'xpath://input[@id='apm-suffix']'.</msg>
+<status status="PASS" starttime="20220702 15:43:57.122" endtime="20220702 15:43:57.176"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220702 15:43:57.351" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220702 15:43:57.176" endtime="20220702 15:43:57.351"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath://button[contains(@class,'js-submit Button Button--primary')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220702 15:43:57.352" level="INFO">Clicking button 'xpath://button[contains(@class,'js-submit Button Button--primary')]'.</msg>
+<status status="PASS" starttime="20220702 15:43:57.351" endtime="20220702 15:43:57.402"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@placeholder='Search payees']</arg>
+<arg>Keshav</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220702 15:43:57.402" level="INFO">Typing text 'Keshav' into text field 'xpath://input[@placeholder='Search payees']'.</msg>
+<status status="PASS" starttime="20220702 15:43:57.402" endtime="20220702 15:43:57.499"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath://span[@class='js-payee-name']</arg>
+<arg>Keshav</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220702 15:43:57.499" level="INFO">Verifying element 'xpath://span[@class='js-payee-name']' contains exact text 'Keshav'.</msg>
+<status status="PASS" starttime="20220702 15:43:57.499" endtime="20220702 15:43:57.894"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220702 15:43:58.024" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220702 15:43:57.894" endtime="20220702 15:43:58.024"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220702 15:43:58.025" endtime="20220702 15:44:00.217"/>
+</kw>
+<status status="PASS" starttime="20220702 15:43:48.646" endtime="20220702 15:44:00.219"/>
+</kw>
+<kw name="TC3: Verify payee name is a required field" library="UserKeywords">
+<tag>UI Test Automation</tag>
+<doc>This test case verifies Payees page Populate mandatory fields Validate errors
+1. Navigate to Payees page
+2. Click ‘Add’ button
+3. Click ‘Add’ button
+4. Validate errors
+5. Populate mandatory fields
+6. Validate errors are gone</doc>
+<kw name="TC1: Verify you can navigate to Payees page using the navigation menu" library="UserKeywords">
+<tag>UI Test Automation</tag>
+<doc>This test case verifies Payees page using the navigation menu,
+1. Click ‘Menu’
+2. Click ‘Payees’
+3. Verify Payees page is loaded</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220702 15:44:00.223" level="INFO">Opening browser 'chrome' to base url 'https://www.demo.bnz.co.nz/client/'.</msg>
+<status status="PASS" starttime="20220702 15:44:00.222" endtime="20220702 15:44:03.336"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220702 15:44:03.336" endtime="20220702 15:44:03.472"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30sec</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220702 15:44:03.473" endtime="20220702 15:44:03.478"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[contains(text(),'Menu')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:03.479" level="INFO">Clicking element 'xpath://span[contains(text(),'Menu')]'.</msg>
+<status status="PASS" starttime="20220702 15:44:03.478" endtime="20220702 15:44:06.590"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='Payees']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:06.591" level="INFO">Clicking element 'xpath://span[normalize-space()='Payees']'.</msg>
+<status status="PASS" starttime="20220702 15:44:06.591" endtime="20220702 15:44:07.426"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='Payees']</arg>
+<arg>Payees</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220702 15:44:07.426" level="INFO">Verifying element 'xpath://span[normalize-space()='Payees']' contains exact text 'Payees'.</msg>
+<status status="PASS" starttime="20220702 15:44:07.426" endtime="20220702 15:44:08.545"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220702 15:44:08.691" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220702 15:44:08.545" endtime="20220702 15:44:08.691"/>
+</kw>
+<status status="PASS" starttime="20220702 15:44:00.221" endtime="20220702 15:44:08.691"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30sec</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220702 15:44:08.691" endtime="20220702 15:44:08.693"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='Add']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:08.693" level="INFO">Clicking element 'xpath://span[normalize-space()='Add']'.</msg>
+<status status="PASS" starttime="20220702 15:44:08.693" endtime="20220702 15:44:08.742"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@class='js-submit Button Button--primary Button--disabled']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:08.743" level="INFO">Clicking element 'xpath://button[@class='js-submit Button Button--primary Button--disabled']'.</msg>
+<status status="PASS" starttime="20220702 15:44:08.742" endtime="20220702 15:44:08.936"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220702 15:44:09.088" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220702 15:44:08.936" endtime="20220702 15:44:09.088"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath://div[@aria-label="'Attention! A problem was found. Please correct the field highlighted below."]</arg>
+<arg>A problem was found. Please correct the field highlighted below.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220702 15:44:09.089" level="INFO">Verifying element 'xpath://div[@aria-label="'Attention! A problem was found. Please correct the field highlighted below."]' contains exact text 'A problem was found. Please correct the field highlighted below.'.</msg>
+<status status="PASS" starttime="20220702 15:44:09.088" endtime="20220702 15:44:09.108"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='ComboboxInput-apm-name']</arg>
+<arg>Keshav</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:09.108" level="INFO">Typing text 'Keshav' into text field 'xpath://input[@id='ComboboxInput-apm-name']'.</msg>
+<status status="PASS" starttime="20220702 15:44:09.108" endtime="20220702 15:44:09.298"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[@title='Someone new: Keshav']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:09.298" level="INFO">Clicking element 'xpath://span[@title='Someone new: Keshav']'.</msg>
+<status status="PASS" starttime="20220702 15:44:09.298" endtime="20220702 15:44:09.362"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='apm-bank']</arg>
+<arg>03</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:09.362" level="INFO">Typing text '03' into text field 'xpath://input[@id='apm-bank']'.</msg>
+<status status="PASS" starttime="20220702 15:44:09.362" endtime="20220702 15:44:09.447"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='apm-branch']</arg>
+<arg>0187</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:09.448" level="INFO">Typing text '0187' into text field 'xpath://input[@id='apm-branch']'.</msg>
+<status status="PASS" starttime="20220702 15:44:09.447" endtime="20220702 15:44:09.499"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='apm-account']</arg>
+<arg>0026306</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:09.499" level="INFO">Typing text '0026306' into text field 'xpath://input[@id='apm-account']'.</msg>
+<status status="PASS" starttime="20220702 15:44:09.499" endtime="20220702 15:44:09.558"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='apm-suffix']</arg>
+<arg>003</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:09.558" level="INFO">Typing text '003' into text field 'xpath://input[@id='apm-suffix']'.</msg>
+<status status="PASS" starttime="20220702 15:44:09.558" endtime="20220702 15:44:09.609"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220702 15:44:09.746" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220702 15:44:09.609" endtime="20220702 15:44:09.746"/>
+</kw>
+<kw name="Element Should Be Enabled" library="SeleniumLibrary">
+<arg>xpath://button[contains(@class,'js-submit Button Button--primary')]</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220702 15:44:09.746" endtime="20220702 15:44:09.771"/>
+</kw>
+<status status="PASS" starttime="20220702 15:44:00.220" endtime="20220702 15:44:09.771"/>
+</kw>
+<kw name="TC4: Verify that payees can be sorted by name" library="UserKeywords">
+<tag>UI Test Automation</tag>
+<doc>This test case Verify list is sorted in ascending order by default and Verify list is sorted in descending order
+1. Navigate to Payees page
+2. Add new payee
+3. Verify list is sorted in ascending order by default
+4. Click Name header
+5. Verify list is sorted in descending order</doc>
+<kw name="TC1: Verify you can navigate to Payees page using the navigation menu" library="UserKeywords">
+<tag>UI Test Automation</tag>
+<doc>This test case verifies Payees page using the navigation menu,
+1. Click ‘Menu’
+2. Click ‘Payees’
+3. Verify Payees page is loaded</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220702 15:44:09.772" level="INFO">Opening browser 'chrome' to base url 'https://www.demo.bnz.co.nz/client/'.</msg>
+<status status="PASS" starttime="20220702 15:44:09.772" endtime="20220702 15:44:12.753"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220702 15:44:12.753" endtime="20220702 15:44:12.889"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30sec</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220702 15:44:12.890" endtime="20220702 15:44:12.891"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[contains(text(),'Menu')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:12.892" level="INFO">Clicking element 'xpath://span[contains(text(),'Menu')]'.</msg>
+<status status="PASS" starttime="20220702 15:44:12.892" endtime="20220702 15:44:15.917"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='Payees']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:15.918" level="INFO">Clicking element 'xpath://span[normalize-space()='Payees']'.</msg>
+<status status="PASS" starttime="20220702 15:44:15.917" endtime="20220702 15:44:17.358"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='Payees']</arg>
+<arg>Payees</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220702 15:44:17.358" level="INFO">Verifying element 'xpath://span[normalize-space()='Payees']' contains exact text 'Payees'.</msg>
+<status status="PASS" starttime="20220702 15:44:17.358" endtime="20220702 15:44:17.856"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220702 15:44:17.977" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220702 15:44:17.856" endtime="20220702 15:44:17.977"/>
+</kw>
+<status status="PASS" starttime="20220702 15:44:09.771" endtime="20220702 15:44:17.988"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30sec</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220702 15:44:17.988" endtime="20220702 15:44:17.990"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220702 15:44:18.137" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220702 15:44:17.990" endtime="20220702 15:44:18.137"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='Auckland Council']</arg>
+<arg>Auckland Council</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220702 15:44:18.137" level="INFO">Verifying element 'xpath://span[normalize-space()='Auckland Council']' contains exact text 'Auckland Council'.</msg>
+<status status="PASS" starttime="20220702 15:44:18.137" endtime="20220702 15:44:18.160"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath://div[@id='js-payee-item-3']//p[@class='Avatar-text js-payee-account'][normalize-space()='01-0001-0000001-001']</arg>
+<arg>01-0001-0000001-001</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220702 15:44:18.160" level="INFO">Verifying element 'xpath://div[@id='js-payee-item-3']//p[@class='Avatar-text js-payee-account'][normalize-space()='01-0001-0000001-001']' contains exact text '01-0001-0000001-001'.</msg>
+<status status="PASS" starttime="20220702 15:44:18.160" endtime="20220702 15:44:18.182"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://h3[@aria-label='Sort by payee name A to Z selected. Select again to reverse order.']//*[name()='svg']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:18.184" level="INFO">Clicking element 'xpath://h3[@aria-label='Sort by payee name A to Z selected. Select again to reverse order.']//*[name()='svg']'.</msg>
+<status status="PASS" starttime="20220702 15:44:18.183" endtime="20220702 15:44:18.223"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220702 15:44:18.364" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220702 15:44:18.223" endtime="20220702 15:44:18.365"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='VODAFONE NZ LTD (MOBILE)']</arg>
+<arg>VODAFONE NZ LTD (MOBILE)</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220702 15:44:18.365" level="INFO">Verifying element 'xpath://span[normalize-space()='VODAFONE NZ LTD (MOBILE)']' contains exact text 'VODAFONE NZ LTD (MOBILE)'.</msg>
+<status status="PASS" starttime="20220702 15:44:18.365" endtime="20220702 15:44:18.389"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath://div[@id='js-payee-item-3']//p[@class='Avatar-text js-payee-account'][normalize-space()='01-0001-0000001-001']</arg>
+<arg>01-0001-0000001-001</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220702 15:44:18.389" level="INFO">Verifying element 'xpath://div[@id='js-payee-item-3']//p[@class='Avatar-text js-payee-account'][normalize-space()='01-0001-0000001-001']' contains exact text '01-0001-0000001-001'.</msg>
+<status status="PASS" starttime="20220702 15:44:18.389" endtime="20220702 15:44:18.402"/>
+</kw>
+<status status="PASS" starttime="20220702 15:44:09.771" endtime="20220702 15:44:18.402"/>
+</kw>
+<kw name="TC5: Navigate to Payments page" library="UserKeywords">
+<tag>UI Test Automation</tag>
+<doc>This test case Verify Transfer $500 from Everyday account to Bills account and validate current balance of Everyday account and Bills account are correct
+1. Navigate to Payments page
+2. Transfer $500 from Everyday account to Bills account
+3. Transfer successful message is displayed
+4. Verify the current balance of Everyday account and Bills account are correct</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220702 15:44:18.403" level="INFO">Opening browser 'chrome' to base url 'https://www.demo.bnz.co.nz/client/'.</msg>
+<status status="PASS" starttime="20220702 15:44:18.403" endtime="20220702 15:44:21.755"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220702 15:44:21.755" endtime="20220702 15:44:21.886"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>30sec</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220702 15:44:21.886" endtime="20220702 15:44:21.891"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[contains(text(),'Menu')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:21.892" level="INFO">Clicking element 'xpath://span[contains(text(),'Menu')]'.</msg>
+<status status="PASS" starttime="20220702 15:44:21.891" endtime="20220702 15:44:25.006"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220702 15:44:26.535" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220702 15:44:25.006" endtime="20220702 15:44:26.535"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='Pay or transfer']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:26.536" level="INFO">Clicking element 'xpath://span[normalize-space()='Pay or transfer']'.</msg>
+<status status="PASS" starttime="20220702 15:44:26.535" endtime="20220702 15:44:26.762"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220702 15:44:27.946" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220702 15:44:26.763" endtime="20220702 15:44:27.946"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='Choose account']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:27.946" level="INFO">Clicking element 'xpath://span[normalize-space()='Choose account']'.</msg>
+<status status="PASS" starttime="20220702 15:44:27.946" endtime="20220702 15:44:28.092"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220702 15:44:28.453" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220702 15:44:28.092" endtime="20220702 15:44:28.454"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220702 15:44:33.465" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220702 15:44:28.454" endtime="20220702 15:44:33.466"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://p[normalize-space()='Everyday']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:33.468" level="INFO">Clicking element 'xpath://p[normalize-space()='Everyday']'.</msg>
+<status status="PASS" starttime="20220702 15:44:33.466" endtime="20220702 15:44:33.620"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220702 15:44:38.629" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220702 15:44:33.620" endtime="20220702 15:44:38.629"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='Choose account, payee, or someone new']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:38.629" level="INFO">Clicking element 'xpath://span[normalize-space()='Choose account, payee, or someone new']'.</msg>
+<status status="PASS" starttime="20220702 15:44:38.629" endtime="20220702 15:44:38.784"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220702 15:44:43.788" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220702 15:44:38.785" endtime="20220702 15:44:43.789"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[normalize-space()='Accounts']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:43.790" level="INFO">Clicking element 'xpath://span[normalize-space()='Accounts']'.</msg>
+<status status="PASS" starttime="20220702 15:44:43.789" endtime="20220702 15:44:43.858"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5sec</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220702 15:44:48.873" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220702 15:44:43.859" endtime="20220702 15:44:48.874"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://p[normalize-space()='Bills']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:48.876" level="INFO">Clicking element 'xpath://p[normalize-space()='Bills']'.</msg>
+<status status="PASS" starttime="20220702 15:44:48.874" endtime="20220702 15:44:49.025"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220702 15:44:49.278" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220702 15:44:49.025" endtime="20220702 15:44:49.279"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://form[@id='paymentForm']/div[1]/div/span/span/input</arg>
+<arg>$500</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:49.279" level="INFO">Typing text '$500' into text field 'xpath://form[@id='paymentForm']/div[1]/div/span/span/input'.</msg>
+<status status="PASS" starttime="20220702 15:44:49.279" endtime="20220702 15:44:49.451"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@aria-label='Statement details, for payer, particulars']</arg>
+<arg>UITest</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:49.452" level="INFO">Typing text 'UITest' into text field 'xpath://input[@aria-label='Statement details, for payer, particulars']'.</msg>
+<status status="PASS" starttime="20220702 15:44:49.451" endtime="20220702 15:44:49.602"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@aria-label='Statement details, for payer, code']</arg>
+<arg>002</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:49.604" level="INFO">Typing text '002' into text field 'xpath://input[@aria-label='Statement details, for payer, code']'.</msg>
+<status status="PASS" starttime="20220702 15:44:49.604" endtime="20220702 15:44:49.743"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@aria-label='Statement details, for payer, reference']</arg>
+<arg>UITest</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:49.743" level="INFO">Typing text 'UITest' into text field 'xpath://input[@aria-label='Statement details, for payer, reference']'.</msg>
+<status status="PASS" starttime="20220702 15:44:49.743" endtime="20220702 15:44:49.891"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@aria-label='Copy particulars, code, and reference from yours to theirs']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:49.891" level="INFO">Clicking element 'xpath://button[@aria-label='Copy particulars, code, and reference from yours to theirs']'.</msg>
+<status status="PASS" starttime="20220702 15:44:49.891" endtime="20220702 15:44:49.952"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[contains(@class,'Language__container')][normalize-space()='Transfer']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220702 15:44:49.953" level="INFO">Clicking element 'xpath://span[contains(@class,'Language__container')][normalize-space()='Transfer']'.</msg>
+<status status="PASS" starttime="20220702 15:44:49.952" endtime="20220702 15:44:50.043"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220702 15:44:50.352" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220702 15:44:50.044" endtime="20220702 15:44:50.352"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath://span[@class='account-balance'][normalize-space()='2,000.00']</arg>
+<arg>2,000.00</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220702 15:44:50.352" level="INFO">Verifying element 'xpath://span[@class='account-balance'][normalize-space()='2,000.00']' contains exact text '2,000.00'.</msg>
+<status status="PASS" starttime="20220702 15:44:50.352" endtime="20220702 15:44:50.523"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath://span[@class='account-balance'][normalize-space()='920.00']</arg>
+<arg>920.00</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220702 15:44:50.523" level="INFO">Verifying element 'xpath://span[@class='account-balance'][normalize-space()='920.00']' contains exact text '920.00'.</msg>
+<status status="PASS" starttime="20220702 15:44:50.523" endtime="20220702 15:44:50.549"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220702 15:44:50.768" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220702 15:44:50.549" endtime="20220702 15:44:50.769"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220702 15:44:50.769" endtime="20220702 15:44:59.516"/>
+</kw>
+<status status="PASS" starttime="20220702 15:44:18.403" endtime="20220702 15:44:59.517"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220702 15:44:59.517" endtime="20220702 15:44:59.518"/>
+</kw>
+<doc>UI Test Automation Using RobotFramework</doc>
+<status status="PASS" starttime="20220702 15:43:35.889" endtime="20220702 15:44:59.518"/>
+</test>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220702 15:44:59.521" endtime="20220702 15:44:59.521"/>
+</kw>
+<doc>UI Test Automation</doc>
+<status status="PASS" starttime="20220702 15:43:35.604" endtime="20220702 15:44:59.521"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="UITestAuto">UITestAuto</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
